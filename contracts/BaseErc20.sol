@@ -1,10 +1,10 @@
-pragma solidity 0.6.8;
+pragma solidity ^0.8.0;
 
 /**
  * NOTE: This contract only exists to serve as a testing utility. It is not recommended to be used outside of a testing environment
  */
 
-import {SafeMath} from "@openzeppelin/contracts/math/SafeMath.sol";
+import {SafeMath} from "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 

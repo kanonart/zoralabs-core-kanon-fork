@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity 0.6.8;
+pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
 
 import {ERC721Burnable} from "./ERC721Burnable.sol";
 import {ERC721} from "./ERC721.sol";
-import {EnumerableSet} from "@openzeppelin/contracts/utils/EnumerableSet.sol";
+import {EnumerableSet} from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
 import {Counters} from "@openzeppelin/contracts/utils/Counters.sol";
-import {SafeMath} from "@openzeppelin/contracts/math/SafeMath.sol";
-import {Math} from "@openzeppelin/contracts/math/Math.sol";
+import {SafeMath} from "@openzeppelin/contracts/utils/math/SafeMath.sol";
+import {Math} from "@openzeppelin/contracts/utils/math/Math.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {
     ReentrancyGuard
-} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
+} from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import {Decimal} from "./Decimal.sol";
 import {IMarket} from "./interfaces/IMarket.sol";
 import "./interfaces/IMedia.sol";

@@ -12,18 +12,18 @@
  *  - `_approve` visibility was changed from private to internal to support EIP-2612 flavored permits and approval revocation by an approved address
  */
 
-pragma solidity 0.6.8;
+pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/GSN/Context.sol";
+import "@openzeppelin/contracts/utils/Context.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
-import "@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol";
-import "@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol";
+import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol";
+import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
-import "@openzeppelin/contracts/introspection/ERC165.sol";
-import "@openzeppelin/contracts/math/SafeMath.sol";
+import "@openzeppelin/contracts/utils/introspection/ERC165.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/utils/EnumerableSet.sol";
-import "@openzeppelin/contracts/utils/EnumerableMap.sol";
+import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import "@openzeppelin/contracts/utils/structs/EnumerableMap.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 /**
